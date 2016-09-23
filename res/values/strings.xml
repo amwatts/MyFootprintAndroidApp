@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">My Footprint</string>
+    <string name="action_settings">Settings</string>
+
+    <!--NAVIGATION-->
+    <string name="totals">Totals</string>
+    <string name="averages">Averages</string>
+    <string name="home">Home</string>
+    <string name="numbers">Numbers</string>
+    <string name="recyclables">recyclables</string>
+
+    <!--BANNERS-->
+    <string name="transportation_banner">How did you travel today?</string>
+    <string name="car_transportation_banner">Car Transportation</string>
+    <string name="train_transportation">Train Transportation</string>
+    <string name="non_motor_banner">Non-Motor Transportation</string>
+    <string name="purchases_banner">What did you buy today?</string>
+    <string name="recycling_banner">What did you recycle today?</string>
+    <string name="calulating">Calculating...</string>
+
+
+    <!--Transportation-->
+    <string name="car">Car</string>
+    <string name="train">Train</string>
+    <string name="non_motor">Non-Motor</string>
+    <string name="none">None</string>
+    <string name="car_input_label">I drove this many minutes in my car today:</string>
+    <string name="car_input_milage">On average, how many miles per gallon does your car get?</string>
+    <string name="car_input_people">How many people were in the car?</string>
+    <string name="non_motor_input_label">In replace of using a motor vehicle, I traveled this many miles today:</string>
+    <string name="train_input_label">I took the train for this many minutes today:</string>
+
+
+    <!--Buy & Recycle-->
+    <string name="plastic_water_bottles">Plastic Bottles:</string>
+    <string name="cans">Aluminum Cans:</string>
+    <string name="beef">Pounds of Beef:</string>
+    <string name="pork">Pounds of Pork:</string>
+    <string name="other_meat">Pounds of chicken/fish:</string>
+    <string name="glass">Glass Bottles:</string>
+    <string name="boxes">Cardboard Boxes:</string>
+    <string name="papers">Magazines/Newspapers:</string>
+    <string name="electronics">Phone/TV/Computers:</string>
+    <string name="title_activity_calc_results">CalcResults</string>
+    <string name="title_activity_total_savings">TotalSavings</string>
+    <string name="title_activity_average_public_savings">AveragePublicSavings</string>
+    <string name="title_activity_calculating">Calculating</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_my_totals">MyTotals</string>
+    <string name="title_activity_my_averages">MyAverages</string>
+    <string name="title_activity_database_numbers">DatabaseNumbers</string>
+    <string name="title_activity_recyclables">Recyclables</string>
+
+    <!--MENU-->
+    <string name="action_fact_fiction">Fact</string>
+    <string name="action_tips_tricks">Tips</string>
+    <string name="title_activity_facts">Facts</string>
+    <string name="title_activity_tips">Tips</string>
+
+</resources>
