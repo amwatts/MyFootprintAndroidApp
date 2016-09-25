@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tips">
+        <item>Keep an average driving speed of 60mph to obtain the highest mileage efficiency</item>
+        <item>Use reusable coffee filters</item>
+        <item>Bring your own bags while grocery shopping</item>
+        <item>Eat less meat</item>
+        <item>Avoid products that are packaged for single use</item>
+        <item>Use a whiteboard instead of a note pad</item>
+        <item>Replace napkins with cloth napkins</item>
+        <item>Stop junk mail coming to your house</item>
+        <item>Cook from scratch at home</item>
+        <item> <!--10-->Microwave when possible instead of using a conventional oven</item>
+        <item>Replacing one incandescent lightbulb with a compact fluorescent light can save 150 pounds of carbon dioxide per year</item>
+        <item>Keep all windows and doors closed as tight as possible when heat or AC is running</item>
+        <item>Unplug appliances when not in use</item>
+        <item>Air dry clothing</item>
+        <item>Taking a quick shower uses less water than filling up a bathtub for a bath</item>
+        <item>Don\'t heat or cool an empty house</item>
+        <item>Carpooling will save on gas and money</item>
+        <item>Take your own mug to the coffee shop</item>
+        <item>Repair those leaky faucets as quickly as you can</item>
+        <item>Next time you have to re-paint use low or VOC-free paint</item>
+        <item>Support green businesses</item>
+        <item>Pay your bills online</item>
+        <item>Buy your firewood where you can to reduce the spread of invasive species</item>
+        <item>Use cold water, it saves energy</item>
+        <item>Pack your lunch in a reusable insulated lunch bag, not a paper bag</item>
+        <item>Use a reusable water bottle instead of buying a disposable one</item>
+        <item>Move your thermostat up 2 degrees in the summer to reduce carbon emission</item>
+        <item>Buy fresh, local food to eliminate the long distances traveled and preserve nutrients and flavor</item>
+        <item>Powering your home with solar panels can reduce your electric bills and shrink your carbon footprint</item>
+        <item>Make sure your household windows are properly sealed and not cracked</item>
+        <item>Dispose your batteries and electronics at the retailers you bought them form</item>
+
+        <item>Fully load your dishwasher instead of washing dishes by hand</item>
+        <item>Print on both sides of the paper when possible</item>
+        <item>Consider replacing old household appliances to newer, more efficient models</item>
+        <item>Use a low-flow showered to use 1 less gallon per minute while showering </item>
+
+
+    </string-array>
+
+</resources>

@@ -8,6 +8,7 @@
     <string name="home">Home</string>
     <string name="numbers">Numbers</string>
     <string name="recyclables">recyclables</string>
+    <string name="next">Next</string>
 
     <!--BANNERS-->
     <string name="transportation_banner">How did you travel today?</string>
@@ -41,20 +42,28 @@
     <string name="boxes">Cardboard Boxes:</string>
     <string name="papers">Magazines/Newspapers:</string>
     <string name="electronics">Phone/TV/Computers:</string>
-    <string name="title_activity_calc_results">CalcResults</string>
+
     <string name="title_activity_total_savings">TotalSavings</string>
+
+    <!--TITLE ACTIVITIES-->
+    <string name="title_activity_calc_results">Calculator Results</string>
+
     <string name="title_activity_average_public_savings">AveragePublicSavings</string>
     <string name="title_activity_calculating">Calculating</string>
-    <string name="title_activity_splash">Splash</string>
-    <string name="title_activity_my_totals">MyTotals</string>
-    <string name="title_activity_my_averages">MyAverages</string>
-    <string name="title_activity_database_numbers">DatabaseNumbers</string>
+    <string name="title_activity_splash">My Footprint</string>
+    <string name="title_activity_my_totals">My Totals</string>
+    <string name="title_activity_my_averages">My Averages</string>
+    <string name="title_activity_database_numbers">Production Numbers</string>
     <string name="title_activity_recyclables">Recyclables</string>
-
-    <!--MENU-->
     <string name="action_fact_fiction">Fact</string>
     <string name="action_tips_tricks">Tips</string>
-    <string name="title_activity_facts">Facts</string>
-    <string name="title_activity_tips">Tips</string>
+    <string name="title_activity_facts">Fact Of The Day</string>
+    <string name="title_activity_tips">Tip Of The Day</string>
+    <string name="title_activity_calculator_input">Footprint Calculator</string>
+    <string name="title_activity_calc_car">Footprint Calculator</string>
+    <string name="title_activity_calc_non_motor">Footprint Calculator</string>
+    <string name="title_activity_calc_train">Footprint Calculator</string>
+    <string name="title_activity_buy_input">Footprint Calculator</string>
+    <string name="title_activity_recycling_input">Footprint Calculator</string>
 
 </resources>

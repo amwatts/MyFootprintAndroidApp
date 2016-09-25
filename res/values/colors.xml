@@ -3,6 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="sig_color">#37c837</color>
+    <color name="active_sig_color">#08f608</color>
 
     <color name="white">#FFFFFF</color>
     <color name="white_transparent">#80FFFFFF</color>
