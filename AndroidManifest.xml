@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wattsup.alissa.myfootprint">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -49,6 +50,34 @@
         <activity
             android:name=".Calculating"
             android:label="@string/title_activity_calculating"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalculatorInput"
+            android:label="@string/title_activity_calculator_input"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalcCar"
+            android:label="@string/title_activity_calc_car"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalcNonMotor"
+            android:label="@string/title_activity_calc_non_motor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalcTrain"
+            android:label="@string/title_activity_calc_train"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BuyInput"
+            android:label="@string/title_activity_buy_input"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecyclingInput"
+            android:label="@string/title_activity_recycling_input"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalcResults"
+            android:label="@string/title_activity_calc_results"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
