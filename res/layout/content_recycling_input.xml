@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_recycling_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/bluebground5"
+    tools:context="com.wattsup.alissa.myfootprint.RecyclingInput"
+    tools:showIn="@layout/activity_recycling_input">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/RecyBanner"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:theme="@style/banner"
+            android:text="@string/recycling_banner" />
+
+        <LinearLayout android:id="@+id/RecyIn1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:background="@color/white_transparent"
+            android:theme="@style/inputLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="@string/plastic_water_bottles"
+                android:theme="@style/inputLabel"/>
+            <EditText android:id="@+id/RecyWaterBottleInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:inputType="number"
+                android:theme="@style/inputValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/RecyIn2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:background="@color/white_transparent"
+            android:theme="@style/inputLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="@string/cans"
+                android:theme="@style/inputLabel"/>
+            <EditText android:id="@+id/RecyCansInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:inputType="number"
+                android:theme="@style/inputValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/RecyIn3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:background="@color/white_transparent"
+            android:theme="@style/inputLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="@string/glass"
+                android:theme="@style/inputLabel"/>
+            <EditText android:id="@+id/RecyGlassBottlesInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:inputType="number"
+                android:theme="@style/inputValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/RecyIn4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:background="@color/white_transparent"
+            android:theme="@style/inputLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="@string/boxes"
+                android:theme="@style/inputLabel"/>
+            <EditText android:id="@+id/RecyBoxesInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:theme="@style/inputValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/RecyIn5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:background="@color/white_transparent"
+            android:theme="@style/inputLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="@string/papers"
+                android:theme="@style/inputLabel"/>
+            <EditText android:id="@+id/RecyPapersInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:inputType="number"
+                android:theme="@style/inputValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/RecyIn6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:background="@color/white_transparent"
+            android:theme="@style/inputLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="@string/electronics"
+                android:theme="@style/inputLabel"/>
+            <EditText android:id="@+id/RecyElectInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:theme="@style/inputValue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/calcnavigationbar"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_calculator_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/bluebground5"
+    tools:context="com.wattsup.alissa.myfootprint.CalculatorInput"
+    tools:showIn="@layout/activity_calculator_input">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/CalcTrans1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:text="@string/transportation_banner"
+            android:theme="@style/banner" />
+
+        <Button android:id="@+id/CalcTrans2"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white_transparent"
+            android:text="@string/car"
+            android:textSize="20sp"
+            android:onClick="ViewCalcCarActivity"/>
+
+        <Button android:id="@+id/CalcTrans3"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white_transparent"
+            android:text="@string/train"
+            android:textSize="20sp"
+            android:onClick="ViewCalcTrainActivity"/>
+
+        <Button android:id="@+id/CalcTrans4"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white_transparent"
+            android:text="@string/non_motor"
+            android:textSize="20sp"
+            android:onClick="ViewCalcNonMotorActivity"/>
+
+        <Button android:id="@+id/CalcTrans5"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white_transparent"
+            android:text="@string/none"
+            android:textSize="20sp"
+            android:onClick="ViewCalcBoughtActivity"/>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/navigationbar"/>
+
+</RelativeLayout>

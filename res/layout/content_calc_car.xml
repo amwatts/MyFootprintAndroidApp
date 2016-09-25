@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_calc_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/bluebground5"
+    android:orientation="vertical"
+    tools:context="com.wattsup.alissa.myfootprint.CalcCar"
+    tools:showIn="@layout/activity_calc_car">
+
+    <TextView android:id="@+id/carBanner"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:theme="@style/banner"
+        android:text="@string/car_transportation_banner"/>
+
+    <LinearLayout android:id="@+id/carLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white_transparent"
+        android:theme="@style/inputLayout"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/CarInputLabel"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:theme="@style/inputLabel"
+            android:text="@string/car_input_label" />
+
+        <EditText android:id="@+id/CarInputValue1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:theme="@style/inputValue" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/carLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white_transparent"
+        android:theme="@style/inputLayout"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/CarInputLabel2"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/car_input_milage"
+            android:theme="@style/inputLabel"/>
+
+        <EditText android:id="@+id/CarInputValue2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:theme="@style/inputValue"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/carLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white_transparent"
+        android:theme="@style/inputLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/car_input_people"
+            android:theme="@style/inputLabel"/>
+
+        <EditText android:id="@+id/CarInputValue3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:theme="@style/inputValue"/>
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:onClick="addAnotherTrans"
+        android:src="@drawable/plus_sign"
+         />
+
+    <TextView android:id="@+id/imageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Add method of transportation"
+        android:layout_above="@+id/include"
+        android:layout_centerHorizontal="true"
+         />
+
+    <include layout="@layout/calcnavigationbar"
+    android:id="@+id/include" />
+
+</LinearLayout>
