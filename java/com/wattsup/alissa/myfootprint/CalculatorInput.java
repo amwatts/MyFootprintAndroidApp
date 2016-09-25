@@ -9,27 +9,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
-import java.util.Calendar;
-
-public class Tips extends AppCompatActivity {
+public class CalculatorInput extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tips);
+        setContentView(R.layout.activity_calculator_input);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        TextView textView = (TextView) findViewById(R.id.tipsText);
-        String[] tipsArray = getResources().getStringArray(R.array.tips);
-
-        //get today's day of the month
-        Calendar cal = Calendar.getInstance();
-        int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
-
-        textView.setText(tipsArray[dayOfMonth]);
 
     }
 
@@ -61,29 +49,49 @@ public class Tips extends AppCompatActivity {
         }
     }
 
-    public void viewMyTotals(View view) {
-        Intent displayTotals = new Intent(this, MyTotals.class);
-        startActivity(displayTotals);
+
+    public void ViewCalcCarActivity (View view) {
+        Intent showCalcCarActivity = new Intent (this, CalcCar.class);
+        startActivity(showCalcCarActivity);
     }
 
-    public void viewMyAverages(View view) {
-        Intent displayMyAverages = new Intent(this, MyAverages.class);
-        startActivity(displayMyAverages);
+    public void ViewCalcTrainActivity (View view) {
+        Intent ShowCalcTrainActivity = new Intent(this, CalcTrain.class);
+        startActivity(ShowCalcTrainActivity);
+    }
+
+    public void ViewCalcNonMotorActivity (View view) {
+        Intent ShowCalcNonMotorActivity = new Intent(this, CalcNonMotor.class);
+        startActivity(ShowCalcNonMotorActivity);
+    }
+
+    public void ViewCalcBoughtActivity (View view) {
+        Intent ShowCalcBoughtActivity = new Intent(this, BuyInput.class);
+        startActivity(ShowCalcBoughtActivity);
+    }
+
+    public void viewMyTotals(View view) {
+        Intent myTotals = new Intent(this, MyTotals.class);
+        startActivity(myTotals);
     }
 
     public void goHome(View view) {
-        Intent displayHome = new Intent(this, MainActivity.class);
-        startActivity(displayHome);
+        Intent homePage = new Intent(this, MainActivity.class);
+        startActivity(homePage);
+    }
+
+    public void viewMyAverages(View view) {
+        Intent myAverages = new Intent(this, MyAverages.class);
+        startActivity(myAverages);
     }
 
     public void viewDatabaseNumbers(View view) {
-        Intent displayDatabaseNumbers = new Intent(this, DatabaseNumbers.class);
-        startActivity(displayDatabaseNumbers);
+        Intent databaseNumber = new Intent(this, DatabaseNumbers.class);
+        startActivity(databaseNumber);
     }
 
     public void goToRecyclables(View view) {
         Intent intent = new Intent(this, Recyclables.class);
         startActivity(intent);
     }
-
 }

@@ -1,6 +1,9 @@
 package com.wattsup.alissa.myfootprint;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +12,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,12 +42,84 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_fact_fiction) {
-            return true;
+        switch (id) {
+            case R.id.action_fact_fiction:
+                Intent intent2 = new Intent(this, Facts.class);
+                startActivity(intent2);
+                return true;
+            case R.id.action_tips_tricks:
+                Intent intent3 = new Intent(this, Tips.class);
+                startActivity(intent3);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
+    }
 
-        return super.onOptionsItemSelected(item);
+    public void goToCalc(View view) {
+        SharedPreferences CalcInputData = getSharedPreferences("CALC_INPUT_DATA", MODE_PRIVATE);
+
+        DateFormat dateInstance = SimpleDateFormat.getDateInstance();
+        String dateToday = dateInstance.format(Calendar.getInstance().getTime());
+        String dateLastCalc = CalcInputData.getString("lastCalcDate", "0");
+
+        //notifyUser();
+
+        if (dateToday.equals(dateLastCalc)) {
+            dialogBoxResponse();
+        }
+        else {
+            //make all transportation equal to 0
+            initiateTransportationToZero();
+
+            Intent displayCalc = new Intent(this, CalculatorInput.class);
+            startActivity(displayCalc);
+        }
+    }
+
+    private void dialogBoxResponse() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setTitle("Number already saved today");
+        builder.setMessage("You will not be able to save another number today, would you like to calculate anyways?");
+
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+
+            public void onClick(DialogInterface dialog, int which) {
+                //make all transportation equal to 0
+                initiateTransportationToZero();
+
+                Intent displayCalc = new Intent(MainActivity.this, CalculatorInput.class);
+                startActivity(displayCalc);
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // Do nothing
+                dialog.dismiss();
+            }
+        });
+
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    private void initiateTransportationToZero() {
+        SharedPreferences CalcInputData = getSharedPreferences("CALC_INPUT_DATA", MODE_PRIVATE);
+        SharedPreferences.Editor CalcInputDataEditor = CalcInputData.edit();
+
+        CalcInputDataEditor.putString("trainMinutes", "0");
+        CalcInputDataEditor.putString("MilesWalked", "0");
+        CalcInputDataEditor.putString("minutesDriven", "0");
+        CalcInputDataEditor.putString("milesPerGallon", "0");
+        CalcInputDataEditor.putString("peopleInCar", "0");
+
+        CalcInputDataEditor.apply();
     }
 
     public void viewMyTotals(View view) {
