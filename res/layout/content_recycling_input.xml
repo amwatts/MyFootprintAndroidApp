@@ -5,16 +5,11 @@
     android:id="@+id/content_recycling_input"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:background="@drawable/bluebground5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.wattsup.alissa.myfootprint.RecyclingInput"
     tools:showIn="@layout/activity_recycling_input">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="60dp"
-        android:orientation="vertical">
 
         <TextView android:id="@+id/RecyBanner"
             android:layout_width="match_parent"
@@ -25,8 +20,8 @@
 
         <LinearLayout android:id="@+id/RecyIn1"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RecyBanner"
             android:layout_marginTop="3dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
@@ -52,8 +47,8 @@
 
         <LinearLayout android:id="@+id/RecyIn2"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RecyIn1"
             android:layout_marginTop="3dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
@@ -79,8 +74,8 @@
 
         <LinearLayout android:id="@+id/RecyIn3"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RecyIn2"
             android:layout_marginTop="3dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
@@ -106,8 +101,8 @@
 
         <LinearLayout android:id="@+id/RecyIn4"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RecyIn3"
             android:layout_marginTop="3dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
@@ -133,8 +128,8 @@
 
         <LinearLayout android:id="@+id/RecyIn5"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RecyIn4"
             android:layout_marginTop="3dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
@@ -160,8 +155,8 @@
 
         <LinearLayout android:id="@+id/RecyIn6"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RecyIn5"
             android:layout_marginTop="3dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
@@ -185,8 +180,6 @@
                 android:layout_height="wrap_content"
                 android:theme="@style/inputValue"/>
         </LinearLayout>
-
-    </LinearLayout>
 
     <include layout="@layout/calcnavigationbar"/>
 

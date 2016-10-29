@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_calc_car"
@@ -19,8 +19,8 @@
 
     <LinearLayout android:id="@+id/carLayout1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="85dp"
+        android:layout_below="@+id/carBanner"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginRight="5dp"
@@ -47,8 +47,8 @@
 
     <LinearLayout android:id="@+id/carLayout2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="85dp"
+        android:layout_below="@+id/carLayout1"
         android:layout_marginBottom="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
@@ -74,8 +74,8 @@
 
     <LinearLayout android:id="@+id/carLayout3"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="80dp"
+        android:layout_below="@+id/carLayout2"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="5dp"
@@ -103,6 +103,8 @@
     <ImageView android:id="@+id/imageView"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_above="@+id/imageLabel"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:onClick="addAnotherTrans"
         android:src="@drawable/plus_sign"
@@ -110,7 +112,8 @@
 
     <TextView android:id="@+id/imageLabel"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
+        android:textSize="17sp"
         android:layout_gravity="center"
         android:textColor="@color/white"
         android:text="Add method of transportation"
@@ -118,7 +121,6 @@
         android:layout_centerHorizontal="true"
          />
 
-    <include layout="@layout/calcnavigationbar"
-    android:id="@+id/include" />
+    <include layout="@layout/calcnavigationbar" android:id="@+id/include" />
 
-</LinearLayout>
+</RelativeLayout>

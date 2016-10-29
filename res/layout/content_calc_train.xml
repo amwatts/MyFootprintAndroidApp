@@ -10,12 +10,6 @@
     tools:context="com.wattsup.alissa.myfootprint.CalcTrain"
     tools:showIn="@layout/activity_calc_train">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="60dp"
-        android:orientation="vertical">
-
         <TextView android:id="@+id/trainbanner"
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -24,42 +18,45 @@
 
         <TextView android:id="@+id/trainInputLabel"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="150dp"
+            android:layout_below="@+id/trainbanner"
             android:text="@string/train_input_label"
             android:theme="@style/transportationInputLabel"/>
 
         <EditText android:id="@+id/trainInputValue"
             android:layout_width="100dp"
-            android:layout_height="0dp"
-            android:layout_marginBottom="30dp"
-            android:layout_weight="1"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:inputType="numberDecimal"
             android:textColor="@color/white"
             android:text="0"
-            android:theme="@style/transportationInputValue" />
+            android:theme="@style/transportationInputValue"
+            android:layout_below="@+id/trainInputLabel"
+            android:layout_centerHorizontal="true" />
 
         <ImageView android:id="@+id/imageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:onClick="addAnotherTrans"
-            android:src="@drawable/plus_sign"
-            />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/imageLabel"
+                android:layout_centerHorizontal="true"
+                android:onClick="addAnotherTrans"
+                android:src="@drawable/plus_sign"
+                />
 
         <TextView android:id="@+id/imageLabel"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
+            android:textSize="17sp"
             android:layout_gravity="center"
             android:textColor="@color/white"
             android:text="Add method of transportation"
-            android:layout_above="@+id/include"
+            android:layout_above="@+id/calcNavBar"
             android:layout_centerHorizontal="true"
             />
-    </LinearLayout>
 
     <include layout="@layout/calcnavigationbar"/>
+
+
 
 </RelativeLayout>

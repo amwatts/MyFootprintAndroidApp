@@ -6,21 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:background="@drawable/bluebground8"
+    android:background="#378ae9"
     tools:context="com.wattsup.alissa.myfootprint.Splash"
     tools:showIn="@layout/activity_splash">
 
-    <TextView android:id="@+id/splashBanner"
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="50sp"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:text="My \nFootprint"
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="5"
-        android:shadowDy="5"
-        android:shadowRadius="8"/>
+        android:src="@drawable/foot"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView2" />
 
 </RelativeLayout>
