@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -41,10 +39,6 @@ public class CalcTrain extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
-            case R.id.action_fact_fiction:
-                Intent intent2 = new Intent(this, Facts.class);
-                startActivity(intent2);
-                return true;
             case R.id.action_tips_tricks:
                 Intent intent3 = new Intent(this, Tips.class);
                 startActivity(intent3);
