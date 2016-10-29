@@ -40,10 +40,6 @@
             android:label="@string/title_activity_recyclables"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Facts"
-            android:label="@string/title_activity_facts"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Tips"
             android:label="@string/title_activity_tips"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -78,7 +74,11 @@
         <activity
             android:name=".CalcResults"
             android:label="@string/title_activity_calc_results"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
