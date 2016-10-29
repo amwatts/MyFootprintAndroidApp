@@ -58,7 +58,7 @@
     <string name="action_fact_fiction">Fact</string>
     <string name="action_tips_tricks">Tips</string>
     <string name="title_activity_facts">Fact Of The Day</string>
-    <string name="title_activity_tips">Tip Of The Day</string>
+    <string name="title_activity_tips">Tip Of The Week</string>
     <string name="title_activity_calculator_input">Footprint Calculator</string>
     <string name="title_activity_calc_car">Footprint Calculator</string>
     <string name="title_activity_calc_non_motor">Footprint Calculator</string>
